@@ -8,24 +8,38 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Todos</h1>
+    <div class="mainContainer">
+    <h1>Budget Planner</h1>
+    <div class="container_1">
+    <h2><%= user.userName %>, your total budget for this month is</h2><!--totalbudget needs to be defined for this to work-->
+    </div>
+    <div class="itemContainer">
     <ul>
+    <form action="/todos/createTodo" method='POST'>
+        <input type="text" placeholder="Enter item" name='todoItem'>
+        <input type="text" placeholder="Enter price" name='itemPrice'>
+        <input type="submit">
+    </form>
+    
+
     <% todos.forEach( el => { %>
             <li class='todoItem' data-id='<%=el._id%>'>
                 <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
-                <span class='del'> Delete </span>
+                <span>Cost = </span>
+                <button class='del'> Delete </button>
             </li>
     <% }) %>    
     </ul>
+    </div>
+    <div class="container_2">
+    <h2><%= user.userName %> has <%= left %> balance</h2>
 
-    <h2><%= user.userName %> has <%= left %> things left to do.</h2>
+    
 
-    <form action="/todos/createTodo" method='POST'>
-        <input type="text" placeholder="Enter Todo Item" name='todoItem'>
-        <input type="submit">
-    </form>
 
-    <a href="/logout">Logout</a>
+   <button class="logout"><a href="/logout">Logout</a></button>
+    </div>
+    </div>
 
     <script src="js/main.js"></script>
 </body>

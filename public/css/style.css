@@ -1,3 +1,6 @@
+body{
+    background-color: lightblue;
+}
 h1{
     color: red;
 }
@@ -7,4 +10,23 @@ h1{
 }
 .not{
     text-decoration: underline;
+}
+
+/*main page*/
+
+button  a {
+    text-decoration: none;
+}
+.itemContainer{
+    border: 3px solid red;
+    color: white; 
+    background-color: rgb(72, 61, 61);
+}
+.mainContainer{
+    
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
 }
