@@ -68,11 +68,17 @@ const User = require('../models/User')
     }
     req.body.email = validator.normalizeEmail(req.body.email, { gmail_remove_dots: false })
   
+		req.body.budget = 65465465465
+		
     const user = new User({
       userName: req.body.userName,
       email: req.body.email,
-      password: req.body.password
+      password: req.body.password,
+			budget: req.body.budget,
     })
+		console.log(req.body.budget, "slkfjsljfslkjfdlksjeiohwoigjiojeoiwjeginwoijeigjwoie  budget")
+		console.log(user)
+		console.log(typeof user.budget, "type")
   
     User.findOne({$or: [
       {email: req.body.email},
