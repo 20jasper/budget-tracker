@@ -21,3 +21,6 @@ async function deleteExpense(){
         console.log(err)
     }
 }
+
+let userBudget = Number(document.querySelector('.budgetAmount').innerHTML) //gets the value out of the h3 which is the users total budget
+console.log(userBudget) //test to see if it works -- it does!
