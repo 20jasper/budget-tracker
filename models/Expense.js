@@ -12,6 +12,7 @@ const ExpenseSchema = new mongoose.Schema({
     type: Number,
     required: true
   } 
+	// amount is called cost in the other version, so some things may not work
 })
 
 module.exports = mongoose.model('Expense', ExpenseSchema)
