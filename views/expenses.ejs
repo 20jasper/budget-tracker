@@ -13,13 +13,14 @@
     <div class="container_1">
     <h2><%= user.userName %>, your total budget for this month is</h2><!--totalbudget needs to be defined for this to work-->
     </div>
-    
+
+    <form action="/expenses/updateBudget" method='POST'>
+			<input type="number" placeholder="Enter budget amount" name='myBudget'>
+			<input type="submit">
+		</form>
+
     <div class="itemContainer">
         <div class="itemContainer">
-            <form action="/expenses/createBudget" method='POST'>
-            <input type="number" placeholder="Enter budget amount" name='myBudget'>
-            <input type="submit">
-        </form>
         <span class="budgetDisplay">Budget Display Here</span>
     <ul>
     <form action="/expenses/createExpense" method='POST'>
