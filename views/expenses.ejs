@@ -11,7 +11,7 @@
     <div class="mainContainer">
     <h1>Budget Planner</h1>
     <div class="container_1">
-    <h2><%= user.userName %>, your total budget for this month is class="budgetAmount"><%= user.budget %> <%= user.preferredCurrency %></h2><!--totalbudget needs to be defined for this to work-->
+    <h2><%= user.userName %>, your total budget for this month is <%= user.budget %> <%= user.preferredCurrency %></h2><!--totalbudget needs to be defined for this to work-->
     </div>
     <div class="itemContainer">
     <form action="/expenses/createExpense" method='POST'>
