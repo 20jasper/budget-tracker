@@ -7,6 +7,8 @@ module.exports = {
         try{
             const expenseItems = await Expense.find({userId:req.user.id})
             const itemsLeft = await Expense.countDocuments({userId:req.user.id,completed: false})
+						const total = expenseItems.reduce((sum, expense)=> expense.amount+sum, 0)
+						console.log({total})
             res.render('expenses.ejs', {expenses: expenseItems, left: itemsLeft, user: req.user})
         }catch(err){
             console.log(err)
