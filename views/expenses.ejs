@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+      <div class="mainContainer">
+    <h1>Budget Planner</h1>
+    <div class="container_1">
+    <h2><%= user.userName %>, your total budget for this month is</h2><!--totalbudget needs to be defined for this to work-->
+    </div>
+    <div class="itemContainer">
+        <form action="/expenses/createBudget" method='POST'>
+        <input type="number" placeholder="Enter budget amount" name='myBudget'>
+        <input type="submit">
+    </form>
+    <span class="budgetDisplay">Budget Display Here</span>
+    <ul>
+
+    <form action="/expenses/createExpense" method='POST'>
+        
+        <input type="text" placeholder="Enter item" name='itemName' required>
+        <input type="number" placeholder="Enter price" name='itemAmount' required>
+        <input type="submit">
+    </form>
+  
+    <% expenses.forEach( el => { %>
+      
+            <li class='deleteExpense' data-id='<%=el._id%>'>
+                <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.expense %></span>
+                <span> - <%=el.amount%></span>
+                <button class='del'> Delete </button>
+            </li>
+    <% }) %>    
+    </ul>
+    </div>
+    <div class="container_2">
+    <h2><%= user.userName %> has <%= left %> balance</h2>
+
+    
+
+
+   <button class="logout"><a href="/logout">Logout</a></button>
+    </div>
+    </div>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
