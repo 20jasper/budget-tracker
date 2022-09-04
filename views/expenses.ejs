@@ -13,18 +13,24 @@
     <div class="container_1">
     <h2><%= user.userName %>, your total budget for this month is</h2><!--totalbudget needs to be defined for this to work-->
     </div>
+    
     <div class="itemContainer">
+        <div class="itemContainer">
+            <form action="/expenses/createBudget" method='POST'>
+            <input type="number" placeholder="Enter budget amount" name='myBudget'>
+            <input type="submit">
+        </form>
+        <span class="budgetDisplay">Budget Display Here</span>
     <ul>
-    <form action="/todos/createTodo" method='POST'>
-        <input type="text" placeholder="Enter item" name='todoItem'>
-        <input type="text" placeholder="Enter price" name='itemPrice'>
+    <form action="/expenses/createExpense" method='POST'>
+        <input type="text" placeholder="Enter item" name='itemName'>
+        <input type="text" placeholder="Enter price" name='itemAmount'>
         <input type="submit">
     </form>
-    
 
-    <% todos.forEach( el => { %>
-            <li class='todoItem' data-id='<%=el._id%>'>
-                <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
+    <% expenses.forEach( el => { %>
+            <li class='deleteExpense' data-id='<%=el._id%>'>
+                <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.expense %></span>
                 <span>Cost = </span>
                 <button class='del'> Delete </button>
             </li>
