@@ -8,6 +8,8 @@ router.get('/', ensureAuth, expensesController.getExpenses)
 
 router.post('/createBudget', budgetController.createBudget)
 
+router.post('/updateBudget', budgetController.updateBudget)
+
 router.post('/createExpense', expensesController.createExpense)
 
 router.delete('/deleteExpense', expensesController.deleteExpense)
