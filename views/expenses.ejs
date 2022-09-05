@@ -43,12 +43,15 @@
     </ul>
     </div>
     <div class="container_2">
-    <h2><%= user.userName %> has <%= user.budget %> <%= user.preferredCurrency %> left to spend</h2>
+
+    <h2><%= user.userName %> has <%= user.budget - total %> <%= user.preferredCurrency %> left to spend</h2>
+
 		<button class="logout"><a href="/logout">Logout</a></button>
     </div>
     </div>
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
 
