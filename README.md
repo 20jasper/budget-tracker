@@ -18,6 +18,10 @@ Not sure what to put here and would love some help --
 ## Lessons Learned:
 When building an application that relies heavily on user input of data through forms it isvery important to guide the user and ensure forms have requirments so the correct information is being passed in. 
 
+No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those *whoa this is awesome* or *fuck yeah I did it!* moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing.
+
+I learnt that Type='Number' is required if you wish a Number to be posted to the MongoDB database. 
+
 ---
 
 ## Packages/Dependencies used 
