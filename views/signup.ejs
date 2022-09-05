@@ -13,12 +13,12 @@
         <% }) %>    
     <% } %>
     <form action="/signup" method="POST">
-        <input type="text" name="userName" placeholder="User Name">
-        <input type="email" name="email" placeholder="Email">
-        <input type="password" name="password" placeholder="Password">
-        <input type="password" name="confirmPassword" placeholder="Confirm Password">
-				<input type="number" name="budget" placeholder="budget">
-        <input type="text" name="preferredCurrency" placeholder="preferredCurrency">
+        <input type="text" name="userName" placeholder="User Name" require>
+        <input type="email" name="email" placeholder="Email" require>
+        <input type="password" name="password" placeholder="Password" require>
+        <input type="password" name="confirmPassword" placeholder="Confirm Password" require>
+				<input type="number" name="budget" placeholder="budget" required min="0.00" max="100000000.00" step="0.01">
+        <input type="text" name="preferredCurrency" placeholder="preferredCurrency" require>
         <input type="submit">
     </form>
 </body>

@@ -21,21 +21,25 @@
 
     <div class="itemContainer">
         <div class="itemContainer">
+            <form action="/expenses/createBudget" method='POST'>
+            <input type="number" placeholder="Enter budget amount" name='myBudget' required min="0.00" max="100000000.00" step="0.01">
+            <input type="submit">
+        </form>
         <span class="budgetDisplay">Budget Display Here</span>
-    <ul>
+
     <form action="/expenses/createExpense" method='POST'>
-        <input type="text" placeholder="Enter item" name='itemName'>
-        <input type="text" placeholder="Enter price" name='itemAmount'>
+        <input type="text" placeholder="Enter item" name='itemName' required>
+        <input type="number" placeholder="Enter price" name='itemAmount' required min="0.00" max="100000000.00" step="0.01">
         <input type="submit">
     </form>
     <ul>
-    <% expenses.forEach( el => { %>
-            <li class='deleteExpense' data-id='<%=el._id%>'>
-                <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.expense %></span>
-                <span class="item">Item: <%= el.expense %> Cost: <%= el.amount %> <%= user.preferredCurrency %></span>
-                <button class='del'> Delete </button>
-            </li>
-    <% }) %>    
+      <% expenses.forEach( el => { %>
+              <li class='deleteExpense' data-id='<%=el._id%>'>
+                  <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.expense %></span>
+                  <span class="item">Item: <%= el.expense %> Cost: <%= el.amount %> <%= user.preferredCurrency %></span>
+                  <button class='del'> Delete </button>
+              </li>
+      <% }) %>    
     </ul>
     </div>
     <div class="container_2">
