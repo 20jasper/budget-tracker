@@ -11,7 +11,7 @@
     <div class="mainContainer">
     <h1>Budget Planner</h1>
     <div class="container_1">
-    <h2><%= user.userName %>, your total budget for this month is</h2><!--totalbudget needs to be defined for this to work-->
+    <h2><%= user.userName %>, your total budget for this month is <%= user.budget %></h2><!--totalbudget needs to be defined for this to work-->
     </div>
     
     <div class="itemContainer">
@@ -24,21 +24,21 @@
     <ul>
     <form action="/expenses/createExpense" method='POST'>
         <input type="text" placeholder="Enter item" name='itemName'>
-        <input type="text" placeholder="Enter price" name='itemAmount'>
+        <input type="number" placeholder="Enter price" name='itemAmount'>
         <input type="submit">
     </form>
 
     <% expenses.forEach( el => { %>
             <li class='deleteExpense' data-id='<%=el._id%>'>
                 <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.expense %></span>
-                <span>Cost = </span>
+                <span>Cost = <%= el.amount %> </span>
                 <button class='del'> Delete </button>
             </li>
     <% }) %>    
     </ul>
     </div>
     <div class="container_2">
-    <h2><%= user.userName %> has <%= left %> balance</h2>
+    <h2><%= user.userName %> has <%= user.budget - total %> balance</h2>
 		<button class="logout"><a href="/logout">Logout</a></button>
     </div>
     </div>
