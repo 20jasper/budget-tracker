@@ -1,57 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div class="mainContainer">
-    <h1>Budget Planner</h1>
-    <div class="container_1">
-    <h2><%= user.userName %>, your total budget for this month is <%= user.budget %> <%= user.preferredCurrency %></h2><!--totalbudget needs to be defined for this to work-->
-    </div>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="margin-bottom-900">Budget Planner</h1>
+      <div class="container_1">
+        <h2 class="margin-bottom-400">
+          <span class="username"><%= user.userName %></span>, your total budget
+          for this month is: <span class="userbudget"><%= user.budget %></span>
+          <span class="currency"><%= user.preferredCurrency %></span>
+        </h2>
+      </div>
 
-    <form action="/expenses/updateBudget" method='POST'>
-			<input type="number" placeholder="Enter budget amount" name='myBudget'>
-			<input type="submit value="Update Budget">
-		</form>
+      <form action="/expenses/createExpense" method="POST" class="container_1">
+        <input
+          type="text"
+          placeholder="Enter item"
+          name="itemName"
+          class="input-field | margin-bottom-400"
+        />
+        <input
+          type="text"
+          placeholder="Enter price"
+          name="itemAmount"
+          class="input-field | margin-bottom-400"
+        />
+        <input type="submit" value="New Expense" class="btn-primary | margin-bottom-900" />
+      </form>
 
-    <div class="itemContainer">
-        <div class="itemContainer">
-            <form action="/expenses/createBudget" method='POST'>
-            <input type="number" placeholder="Enter budget amount" name='myBudget' required min="0.00" max="100000000.00" step="0.01">
-            <input type="submit" value="Create Budget">
-        </form>
-        <span class="budgetDisplay">Budget Display Here</span>
-
-    <form action="/expenses/createExpense" method='POST'>
-        <input type="text" placeholder="Enter item" name='itemName' required>
-        <input type="number" placeholder="Enter price" name='itemAmount' required min="0.00" max="100000000.00" step="0.01">
-        <input type="submit" value="New Expense">
-    </form>
-    <ul>
-      <% expenses.forEach( el => { %>
-              <li class='deleteExpense' data-id='<%=el._id%>'>
-                  <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.expense %></span>
-                  <span class="item">Item: <%= el.expense %> Cost: <%= el.amount %> <%= user.preferredCurrency %></span>
-                  <button class='del'> Delete </button>
-              </li>
-      <% }) %>    
-    </ul>
-    </div>
-    <div class="container_2">
-
-    <h2><%= user.userName %> has <%= user.budget - total %> <%= user.preferredCurrency %> left to spend</h2>
-
-		<button class="logout"><a href="/logout">Logout</a></button>
-    </div>
+      <div class="expenses-container | margin-bottom-900">
+        <h3 class="margin-bottom-400">My expenses</h3>
+        <ul class="items-container | margin-bottom-400">
+          <% expenses.forEach( el => { %>
+          <li class="expense-li | deleteExpense" data-id="<%=el._id%>">
+            <span
+              class="item | <%= el.completed === true ? 'completed' : 'not'%>"
+            >
+              <%= el.expense %>
+            </span>
+            <span class="cost">
+              Cost:
+              <span class="expense"
+                ><%= el.amount %> <%= user.preferredCurrency %></span
+              >
+            </span>
+            <button class="del | delete-btn">Delete</button>
+          </li>
+          <% }) %>
+        </ul>
+      </div>
+      <div class="container_1 | margin-bottom-900">
+        <h2 class="| margin-bottom-900">
+          <span class="username"><%= user.userName %></span> has
+          <span class="userbudget"><%= user.budget - total %></span>
+          <span class="currency"><%= user.preferredCurrency %> </span> left to
+          spend
+        </h2>
+        <a href="/logout" class="btn-secondary">Logout</a>
+      </div>
     </div>
 
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
-
