@@ -1,20 +1,26 @@
 
-## Budget Tracker:
-This app allows users to conviniently track their expenses and budget, handy to have on the go as it can be accessed through the web at any time!!
+# Budget Tracker:
+This app allows users to conveniently track their expenses and budget, handy to have on the go as it can be accessed through the web at any time!!
 
 
 **Link to project:** https://budget-tracker.up.railway.app
 
-
+- [Budget Tracker:](#budget-tracker)
+	- [How It's Made:](#how-its-made)
+	- [Optimizations](#optimizations)
+	- [Lessons Learned:](#lessons-learned)
+	- [Packages/Dependencies used](#packagesdependencies-used)
+	- [Install all the dependencies or node packages used for development via Terminal](#install-all-the-dependencies-or-node-packages-used-for-development-via-terminal)
+	- [Things to add](#things-to-add)
 
 
 ![A budget planner with a few test expenses. There is a form to add a new expense](https://user-images.githubusercontent.com/78604367/188524492-5c3a6633-335d-4511-ac35-59dc073f138c.png)
 
 ## How It's Made:
 
-**Tech used:** HTML, CSS, JavaScript, Node.js, monogoDB 
+**Tech used:** HTML, CSS, JavaScript, Node.js, MongoDB, EJS, express 
 
-This project was built by a team at the 100Devs Agency using HTML, CSS and JS on the front end. Node.js was used for the backend language and all of the information was stored in mongoDB. This project was built with the MVC paradigm to maximize organization. 
+This project was built by a team at the 100Devs Agency using HTML, CSS and JS on the front end. Node.js was used for the backend language and all of the information was stored in MongoDB. This project was built with the MVC paradigm to maximize organization. 
 
 ## Optimizations
 
