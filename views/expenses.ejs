@@ -16,7 +16,15 @@
           for this month is: <span class="userbudget"><%= user.budget %></span>
           <span class="currency"><%= user.preferredCurrency %></span>
         </h2>
+      
+    
+    
       </div>
+      <form action="/expenses/updateBudget" method='POST'class="container_1">
+        <input type="number" placeholder="Enter new budget"class="input-field | margin-bottom-400" name='myBudget'>
+        <input type="submit"class="btn-primary | margin-bottom-400"value="Update Budget">
+        
+      </form>
 
       <form action="/expenses/createExpense" method="POST" class="container_1">
         <input
