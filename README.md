@@ -3,7 +3,7 @@ Write a short sentence or two about this project and what it does. Be sure to in
 
 **Link to project:** https://budget-tracker.up.railway.app/
 
-![alt tag](http://placecorgi.com/1200/650)
+![A budget planner with a few test expenses. There is a form to add a new expense](https://user-images.githubusercontent.com/78604367/188524492-5c3a6633-335d-4511-ac35-59dc073f138c.png)
 
 ## How It's Made:
 
