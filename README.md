@@ -9,6 +9,7 @@ This app allows users to conveniently track their expenses and budget, handy to 
 	- [How It's Made:](#how-its-made)
 	- [Optimizations](#optimizations)
 	- [Lessons Learned:](#lessons-learned)
+	- [- Learned how to put an app with a database into production by allowing all IPs ~ @20jasper](#--learned-how-to-put-an-app-with-a-database-into-production-by-allowing-all-ips--20jasper)
 	- [Packages/Dependencies used](#packagesdependencies-used)
 	- [Install all the dependencies or node packages used for development via Terminal](#install-all-the-dependencies-or-node-packages-used-for-development-via-terminal)
 	- [Things to add](#things-to-add)
@@ -37,12 +38,13 @@ This program works, however in the future it would be great to:
 ---
 ## Lessons Learned:
 
--When building an application that relies heavily on user input of data through forms it is very important to guide the user and ensure forms have requirments so the correct information is being passed in. 
+- When building an application that relies heavily on user input of data through forms it is very important to guide the user and ensure forms have requirments so the correct information is being passed in. 
 
--Learned how different elements of the MVC model come together and interact with each other to direct the flow of data, how rendering takes place and how to make variables available to the views from the the controllers. (devd00)
+- Learned how different elements of the MVC model come together and interact with each other to direct the flow of data, how rendering takes place and how to make variables available to the views from the the controllers. (devd00)
 
--I learnt that Type='Number' is required if you wish a Number to be posted to the MongoDB database.(TheCrazyHorse)
+- I learnt that `Type='Number'` is required if you wish a Number to be posted to the MongoDB database.(TheCrazyHorse)
 
+- Learned how to put an app with a database into production by allowing all IPs ~ [@20jasper](https://github.com/20jasper)
 ---
 
 ## Packages/Dependencies used 
