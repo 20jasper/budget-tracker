@@ -25,12 +25,17 @@
           placeholder="Enter item"
           name="itemName"
           class="input-field | margin-bottom-400"
+					required
         />
         <input
           type="text"
           placeholder="Enter price"
           name="itemAmount"
           class="input-field | margin-bottom-400"
+					required 
+					min="0.00" 
+					max="100000000.00" 
+					step="0.01"
         />
         <input type="submit" class="btn-primary | margin-bottom-900" />
       </form>
