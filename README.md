@@ -2,9 +2,13 @@
 This app allows users to conviniently track their expenses and budget, handy to have on the go as it can be accessed through the web at any time!!
 
 
+
 **Link to project:** https://budget-tracker.up.railway.app
 
-![alt tag](http://placecorgi.com/1200/650)
+
+
+
+![A budget planner with a few test expenses. There is a form to add a new expense](https://user-images.githubusercontent.com/78604367/188524492-5c3a6633-335d-4511-ac35-59dc073f138c.png)
 
 ## How It's Made:
 
