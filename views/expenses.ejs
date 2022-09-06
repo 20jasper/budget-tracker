@@ -21,7 +21,9 @@
     
       </div>
       <form action="/expenses/updateBudget" method='POST'class="container_1">
-        <input type="number" placeholder="Enter new budget"class="input-field | margin-bottom-400" name='myBudget'>
+        <input type="number" placeholder="Enter new budget"class="input-field | margin-bottom-400" name='myBudget'min="0.00" 
+        max="100000000.00" 
+        step="0.01">
         <input type="submit"class="btn-primary | margin-bottom-400"value="Update Budget">
         
       </form>
