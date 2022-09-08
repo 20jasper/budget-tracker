@@ -43,7 +43,7 @@ This program works, however in the future it would be great to:
 ---
 ## Lessons Learned:
 
-- When building an application that relies heavily on user input of data through forms it is very important to guide the user and ensure forms have requirments so the correct information is being passed in. 
+- When building an application that relies heavily on user input of data through forms it is very important to guide the user and ensure forms have requirements so the correct information is being passed in. 
 
 - Learned how different elements of the MVC model come together and interact with each other to direct the flow of data, how rendering takes place and how to make variables available to the views from the the controllers. (devd00)
 
