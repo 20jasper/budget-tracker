@@ -27,9 +27,10 @@ This project was built by a team at the 100Devs Agency using HTML, CSS and JS on
 
 
 This program works, however in the future it would be great to:
--adding reminders list to the project for various miscellaneous tasks tied to the users budget
 
--build out a more features for time based tracking, possibly calander GUI 
+-add reminders list to the project for various miscellaneous tasks tied to the users budget
+
+-build out more features for time based tracking, possibly calander GUI 
 
 -Additionally it would be great to have comparison tools such as spending history month over month and year over year to make it easier for the user to compare different periods.
 
