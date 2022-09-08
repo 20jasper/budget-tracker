@@ -53,8 +53,6 @@ This program works, however in the future it would be great to:
 
 - Learned how to put an app with a database into production by allowing all IPs ~ [@20jasper](https://github.com/20jasper)
 
-
-- Learned how to put an app with a database into production by allowing all IPs ~ [@20jasper](https://github.com/20jasper)
 ---
 
 ## Packages/Dependencies used 
