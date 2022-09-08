@@ -16,7 +16,7 @@ password: demodemo
 	- [Lessons Learned:](#lessons-learned)
 	- [Packages/Dependencies used](#packagesdependencies-used)
 	- [Installation](#installation)
-	- [- DB_STRING: `your database URI`](#--db_string-your-database-uri)
+
 
 
 ![A budget planner with a few test expenses. There is a form to add a new expense](https://user-images.githubusercontent.com/78604367/188524492-5c3a6633-335d-4511-ac35-59dc073f138c.png)
@@ -63,7 +63,7 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
 
 - `npm install` 
 - Create a `.env` file and add the following as `key: value` 
-  - DB_STRING: `your database URI` 
+DB_STRING: `your database URI` 
 ---
 
 
