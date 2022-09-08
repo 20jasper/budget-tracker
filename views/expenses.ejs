@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -17,7 +16,17 @@
           for this month is: <span class="userbudget"><%= user.budget %></span>
           <span class="currency"><%= user.preferredCurrency %></span>
         </h2>
+      
+    
+    
       </div>
+      <form action="/expenses/updateBudget" method='POST'class="container_1">
+        <input type="number" placeholder="Enter new budget"class="input-field | margin-bottom-400" name='myBudget'min="0.00" 
+        max="100000000.00" 
+        step="0.01">
+        <input type="submit"class="btn-primary | margin-bottom-400"value="Update Budget">
+        
+      </form>
 
       <form action="/expenses/createExpense" method="POST" class="container_1">
         <input
@@ -25,14 +34,19 @@
           placeholder="Enter item"
           name="itemName"
           class="input-field | margin-bottom-400"
+					required
         />
         <input
-          type="text"
+          type="number"
           placeholder="Enter price"
           name="itemAmount"
           class="input-field | margin-bottom-400"
+					required 
+					min="0.00" 
+					max="100000000.00" 
+					step="0.01"
         />
-        <input type="submit" class="btn-primary | margin-bottom-900" />
+        <input type="submit" value="New Expense" class="btn-primary | margin-bottom-900" />
       </form>
 
       <div class="expenses-container | margin-bottom-900">

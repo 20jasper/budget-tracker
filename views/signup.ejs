@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,38 +19,47 @@
           name="userName"
           placeholder="User Name"
           class="input-field | margin-bottom-400"
+					required
         />
         <input
           type="email"
           name="email"
           placeholder="Email"
           class="input-field | margin-bottom-400"
+					required
         />
         <input
           type="password"
           name="password"
           placeholder="Password"
           class="input-field | margin-bottom-400"
+					required
         />
         <input
           type="password"
           name="confirmPassword"
           placeholder="Confirm Password"
           class="input-field | margin-bottom-400"
+					required
         />
         <input
           type="number"
           name="budget"
           placeholder="Budget"
           class="input-field | margin-bottom-400"
+					required
+					min="0.00" 
+					max="100000000.00" 
+					step="0.01"
         />
         <input
           type="text"
           name="preferredCurrency"
           placeholder="Preferred Currency"
           class="input-field | margin-bottom-400"
+					required
         />
-        <input type="submit" class="btn-primary" />
+        <input type="submit" value="Sign Up" class="btn-primary" />
       </form>
     </div>
   </body>
