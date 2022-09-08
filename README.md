@@ -25,7 +25,7 @@ password: demodemo
 
 **Tech used:** HTML, CSS, JavaScript, Node.js, MongoDB, EJS, express 
 
-This project was built by [@bycarlosgamez](https://github.com/bycarlosgamez), [@TCHProductions](https://github.com/TCHProductions), [@NPMaiorano](https://github.com/NPMaiorano), [@devd00](https://github.com/devd00), and [@20jasper](https://github.com/20jasper) from the 100Devs Agency using HTML, CSS and JS on the front end. Node.js was used for the backend language and all of the information was stored in MongoDB. This project was built with the MVC paradigm to maximize organization. 
+This project was built by [@bycarlosgamez](https://github.com/bycarlosgamez), [@TCHProductions](https://github.com/TCHProductions), [@NPMaiorano](https://github.com/NPMaiorano), [@devd00](https://github.com/devd00), and [@20jasper](https://github.com/20jasper) from the 100Devs Agency using HTML, CSS and JS on the front end. Node.js, Express, EJS was used for the backend with the MVC paradigm, and all of the user and expense information was stored in MongoDB.
 
 ## Optimizations
 
