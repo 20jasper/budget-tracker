@@ -15,8 +15,8 @@ password: demodemo
 	- [Optimizations](#optimizations)
 	- [Lessons Learned:](#lessons-learned)
 	- [Packages/Dependencies used](#packagesdependencies-used)
-	- [Install all the dependencies or node packages used for development via Terminal](#install-all-the-dependencies-or-node-packages-used-for-development-via-terminal)
-	- [Things to add](#things-to-add)
+	- [Installation](#installation)
+	- [- DB_STRING: `your database URI`](#--db_string-your-database-uri)
 
 
 ![A budget planner with a few test expenses. There is a form to add a new expense](https://user-images.githubusercontent.com/78604367/188524492-5c3a6633-335d-4511-ac35-59dc073f138c.png)
@@ -59,18 +59,11 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
 
 ---
 
-## Install all the dependencies or node packages used for development via Terminal
+## Installation
 
-`npm install` 
-
----
-
-## Things to add
-
+- `npm install` 
 - Create a `.env` file and add the following as `key: value` 
-  - PORT: 2121 (can be any port example: 3000) 
   - DB_STRING: `your database URI` 
-
- ---
+---
 
 
