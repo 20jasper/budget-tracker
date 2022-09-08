@@ -4,8 +4,13 @@ This app allows users to conveniently track their expenses and budget, handy to 
 
 
 **Link to project:** https://budget-tracker.up.railway.app
+## Demo credentials
+If you just want to try out the app, use these credentials
+email: demo@demo.com
+password: demodemo
 
 - [Budget Tracker:](#budget-tracker)
+	- [Demo credentials](#demo-credentials)
 	- [How It's Made:](#how-its-made)
 	- [Optimizations](#optimizations)
 	- [Lessons Learned:](#lessons-learned)
