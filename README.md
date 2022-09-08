@@ -9,7 +9,6 @@ This app allows users to conveniently track their expenses and budget, handy to 
 	- [How It's Made:](#how-its-made)
 	- [Optimizations](#optimizations)
 	- [Lessons Learned:](#lessons-learned)
-	- [- Learned how to put an app with a database into production by allowing all IPs ~ @20jasper](#--learned-how-to-put-an-app-with-a-database-into-production-by-allowing-all-ips--20jasper)
 	- [Packages/Dependencies used](#packagesdependencies-used)
 	- [Install all the dependencies or node packages used for development via Terminal](#install-all-the-dependencies-or-node-packages-used-for-development-via-terminal)
 	- [Things to add](#things-to-add)
@@ -46,6 +45,7 @@ This program works, however in the future it would be great to:
 - I learnt that `Type='Number'` is required if you wish a Number to be posted to the MongoDB database.(TheCrazyHorse)
 
 - Learned how to put an app with a database into production by allowing all IPs ~ [@20jasper](https://github.com/20jasper)
+
 ---
 
 ## Packages/Dependencies used 
