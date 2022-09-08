@@ -1,6 +1,6 @@
 
 # Budget Tracker:
-This app allows users to conveniently track their expenses and budget, handy to have on the go as it can be accessed through the web at any time!!
+Sign in to track your monthly expenses. Set your monthly budget and preferred currency to see how much money you have left. Users can add and delete expenses as well update their budget
 
 
 **Link to project:** https://budget-tracker.up.railway.app
