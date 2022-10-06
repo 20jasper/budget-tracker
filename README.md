@@ -20,7 +20,7 @@ password: demodemo
 	- [Installation](#installation)
 
 
-![A budget planner with a few test expenses. There is a form to add a new expense](https://user-images.githubusercontent.com/78604367/188524492-5c3a6633-335d-4511-ac35-59dc073f138c.png)
+![An animation of a budget planner with a few test expenses. An expense is deleted then another is added](https://user-images.githubusercontent.com/78604367/194408461-dbc4cb48-f934-423d-b072-93086ebfaf75.gif)
 
 ## How It's Made:
 
